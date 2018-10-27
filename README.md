@@ -31,6 +31,7 @@ OU's to be listed in .xml format. one <orgName> for each attribute. Example:
       to Active Directory. Open Powershell and type:
       
         import-activedirectory
+        
         $scope = 'Write your base DN where you want to find attributes here. eg: OU=something,OU=something,DC=something,DC=something'
         get-aduser -filter * -searchbase = $scope
    
