@@ -30,7 +30,7 @@ OU's to be listed in .xml format. one <orgName> for each attribute. Example:
     * You need access to query the LDAP server before the script can access the data. Verify this by logging on to a machine with access
       to Active Directory. Open Powershell and type:
       
-        import-activedirectory
+      import-module activedirectory
         
         $scope = 'Write your base DN where you want to find attributes here. eg: OU=something,OU=something,DC=something,DC=something'
         get-aduser -filter * -searchbase = $scope
