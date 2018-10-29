@@ -33,6 +33,7 @@ OU's to be listed in .xml format. one <orgName> for each attribute. Example:
       import-module activedirectory
         
         $scope = 'Write your base DN where you want to find attributes here. eg: OU=something,OU=something,DC=something,DC=something'
+        
         get-aduser -filter * -searchbase = $scope
    
     if this worked: you have access. 
